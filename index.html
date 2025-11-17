@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Braille → Audio Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container py-5">
+      <h1>🔠 Braille → Audio Converter</h1>
+
+      <div class="card upload-card mt-5">
+        <div class="card-body text-center">
+          <form id="upload-form">
+            <div class="mb-3">
+              <label for="files" class="form-label fw-semibold">Upload Braille images</label>
+              <input class="form-control form-control-lg" type="file" id="files" name="files" multiple accept="image/*">
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg mt-2 px-4">
+              🎧 Predict & Speak
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div id="results" style="display:none;">
+        <div class="card mt-4">
+          <div class="card-body">
+            <h4 class="mb-3 text-primary">🧠 Predictions</h4>
+            <ul id="pred-list" class="list-group mb-3"></ul>
+            <p id="pred-text" class="fw-bold"></p>
+            <audio id="audio-player" controls style="display:none;"></audio>
+          </div>
+        </div>
+      </div>
+
+      <footer class="mt-4 text-center text-muted">
+        ✨ Developed by Deva Sri — Braille to Audio AI Assistant
+      </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
