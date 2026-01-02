@@ -29,7 +29,7 @@ TensorFlow / CNN – Braille character classification
 OCR / Pattern Recognition – text conversion
 Text-to-Speech (TTS) – audio generation
 
-⚙️ System Workflow
+📌 System Workflow
 
 Input Braille image is captured or uploaded
 Image preprocessing is applied (grayscale, noise removal, thresholding)
