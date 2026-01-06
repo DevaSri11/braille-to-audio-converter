@@ -1,39 +1,59 @@
 # braille-to-audio-converter
 
 ## Braille Dataset
+<h1 align="center">Braille to Audio Converter</h1>
 
-The dataset is hosted externally on Google Drive. To download and extract it, run:
+<p align="center">
+An assistive technology project that converts Braille images into readable text and audio output,
+helping visually impaired users access written content through speech.
+</p>
 
-```bash
-pip install gdown
-python dataset.py
+<hr>
+<img width="911" height="905" alt="Screenshot 2026-01-06 223541" src="https://github.com/user-attachments/assets/3f8d6d92-f360-4132-850f-be5f9225a311" />
 
-Braille to Audio Converter
-📌 Project Overview
+<h2>📌 Project Description</h2>
+<p>
+The Braille to Audio Converter processes images containing Braille characters using image processing
+and machine learning techniques. Detected Braille dot patterns are translated into text and then
+converted into speech using Text-to-Speech (TTS) technology.
+</p>
 
-The Braille to Audio Converter is an assistive technology project designed to help visually impaired individuals access Braille content through audio output. The system captures Braille text in image form, recognizes Braille dot patterns using image processing and machine learning techniques, converts them into readable text, and finally generates corresponding speech using Text-to-Speech (TTS).
+<h2>📌 Features</h2>
+<ul>
+  <li>Braille character detection from images</li>
+  <li>Image preprocessing for noise reduction</li>
+  <li>Braille pattern recognition using CNN</li>
+  <li>Text conversion from Braille</li>
+  <li>Audio output using Text-to-Speech</li>
+</ul>
 
-📌 Features
+<h2>📌 Technologies Used</h2>
+<ul>
+  <li>Python</li>
+  <li>OpenCV</li>
+  <li>TensorFlow / CNN</li>
+  <li>Image Processing</li>
+  <li>Text-to-Speech (TTS)</li>
+</ul>
 
-Detects Braille characters from input images
-Uses image preprocessing techniques to enhance Braille dot recognition
-Converts recognized Braille patterns into readable text
-Generates clear audio output using Text-to-Speech
-Designed to work under different lighting and image quality conditions
+<h2>📌 Workflow</h2>
+<ol>
+  <li>Input Braille image is uploaded</li>
+  <li>Image preprocessing is applied</li>
+  <li>Braille dots are detected and segmented</li>
+  <li>CNN model recognizes Braille characters</li>
+  <li>Text is converted into audio output</li>
+</ol>
 
-📌 Technologies Used
+<h2>📌 Applications</h2>
+<ul>
+  <li>Assistive technology for visually impaired users</li>
+  <li>Braille learning systems</li>
+  <li>Accessibility-focused applications</li>
+</ul>
 
-Python – core programming language
-OpenCV – image preprocessing and Braille dot detection
-TensorFlow / CNN – Braille character classification
-OCR / Pattern Recognition – text conversion
-Text-to-Speech (TTS) – audio generation
-
-📌 System Workflow
-
-Input Braille image is captured or uploaded
-Image preprocessing is applied (grayscale, noise removal, thresholding)
-Braille dot patterns are detected and segmented
-CNN model classifies Braille characters
-Recognized text is converted into audio output
-Audio is played for the user
+<h2>Author</h2>
+<p>
+Developed by <b>Deva Sri D</b><br>
+Computer Science & Engineering
+</p>
