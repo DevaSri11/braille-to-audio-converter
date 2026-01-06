@@ -1,6 +1,3 @@
-# braille-to-audio-converter
-
-## Braille Dataset
 <h1 align="center">Braille to Audio Converter</h1>
 
 <p align="center">
