@@ -1,6 +1,5 @@
 <h1 align="center">Braille to Audio Converter</h1>
 
-# Braille to Audio Converter
 
 An assistive technology system that converts **Braille text into readable text and audio output**, enabling visually impaired users to access written information through speech.
 This project combines **Computer Vision**, **Machine Learning**, and **Text-to-Speech (TTS)** to automate the conversion of Braille content into audio.
